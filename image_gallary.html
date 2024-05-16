@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallary</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        height: 97vh;
+        position: relative;
+        border: 2px solid;
+        background-image: linear-gradient(to right, #808080, #f5deb3, #808080);
+        box-shadow: 5px 15px 15px;
+      }
+
+      .image-one {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .image-two {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .image-three {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .image-four {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      #image {
+        height: 35%;
+        width: 25%;
+        margin: 5px;
+        border-radius: 15px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body style="background-color: #000">
+    <div class="container">
+      <img
+        class="image-one"
+        id="image"
+        src="/multimedia/images/cloud-bg-image.jpg"
+        alt=""
+      />
+      <img
+        class="image-two"
+        id="image"
+        src="/multimedia/images/cloud-bg-image.jpg"
+        alt=""
+      />
+      <img
+        class="image-three"
+        id="image"
+        src="/multimedia/images/cloud-bg-image.jpg"
+        alt=""
+      />
+      <img
+        class="image-four"
+        id="image"
+        src="/multimedia/images/cloud-bg-image.jpg"
+        alt=""
+      />
+      <img id="image" src="/multimedia/images/cloud-bg-image.jpg" alt="" />
+    </div>
+  </body>
+</html>

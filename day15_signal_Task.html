@@ -3,9 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Signal Light</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: last baseline;
+        box-sizing: border-box;
+        height: 95vh;
+        background-image: url("multimedia/images/cloud-bg-image.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .signal-container-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 91%;
+        width: 15%;
+        background-color: #4e4e4e;
+        margin-bottom: 20px;
+        border-radius: 100px;
+      }
+      .signal-container-two {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 95%;
+        width: 89%;
+        background-color: #000;
+        border-radius: 100px;
+      }
+      .lights-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4e4e4e;
+        height: 25%;
+        width: 68%;
+        border-radius: 60px;
+        box-shadow: 1px 1px 20px #4e4e4e;
+      }
+      .lights {
+        height: 89%;
+        width: 89%;
+        border-radius: 70px;
+        filter: blur(2px);
+      }
+    </style>
   </head>
   <body>
-    <h1>hello</h1>
+    <div class="container">
+      <div class="signal-container-one">
+        <div class="signal-container-two">
+          <div class="lights-container">
+            <div class="lights" style="background-color: #ff0000"></div>
+          </div>
+          <div class="lights-container">
+            <div class="lights" style="background-color: #ffff00"></div>
+          </div>
+          <div class="lights-container">
+            <div class="lights" style="background-color: #008000"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
