@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>My Food</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Karma, sans-serif;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: normal;
+      }
+      .navbar-container {
+        display: flex;
+        justify-content: center;
+      }
+      .navbar-items {
+        width: 85%;
+        display: flex;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+      }
+      .menu-icon {
+        display: inline-block;
+        padding: 15px 8px;
+        /* background-color: yellow; */
+      }
+      .mail-text {
+        display: inline-block;
+        padding: 15px 8px;
+        /* background-color: yellow; */
+      }
+      .image-and-text-container-main1 {
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8%;
+      }
+      .image-and-text-container-main2 {
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2%;
+      }
+
+      .image-and-text-content-container {
+        display: flex;
+        justify-content: space-between;
+        /* background-color: yellowgreen; */
+        width: 86.5%;
+      }
+      .image-and-text-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 80%;
+        width: 85%;
+        padding: 0px 10px;
+        /* background-color: yellow; */
+      }
+      .just-image {
+        width: 100%;
+        height: 70%;
+      }
+      .bold-text {
+        /* background-color: red; */
+        font-size: 23px;
+        line-height: 36px;
+      }
+      .sub-text {
+        /* background-color: blue; */
+        font-size: 15px;
+        line-height: 22.5px;
+      }
+
+      .pagenation-main {
+        display: flex;
+        justify-content: center;
+
+        /* background-color: #0d0080; */
+        margin: 4% 0;
+      }
+      .pagenation-container {
+        /* background-color: red; */
+        width: 86.5%;
+        align-items: center;
+      }
+      .pagenation-numbrics {
+        /* background-color: pink; */
+        padding: 12px 20px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #000;
+        margin: 0px;
+      }
+
+      #icon {
+        /* background-color: pink; */
+        margin-bottom: 5px;
+        padding: 5px 2px;
+        text-decoration: none;
+        font-size: 10px;
+      }
+      .pagenation-numbrics:hover {
+        background-color: #000;
+        color: #fff;
+      }
+
+      .lable-text-container {
+        background-color: #afaeae;
+        width: 50px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .lable-text {
+        font-size: 10px;
+        color: #fff;
+      }
+
+      .lable-text-container:hover {
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar-items">
+        <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+        <span>My Food</span>
+        <span class="mail-text">Mail</span>
+      </div>
+    </div>
+    <div class="image-and-text-container-main1">
+      <div class="image-and-text-content-container">
+        <div class="image-and-text-content">
+          <img
+            class="just-image"
+            src="./multimedia/images/sandwich.jpg"
+            alt=""
+          />
+          <p class="bold-text">The Perfect Sandwich, A Real NYC Classic</p>
+          <p class="sub-text">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="image-and-text-content">
+          <img class="just-image" src="./multimedia/images/steak.jpg" alt="" />
+          <p class="bold-text">The Perfect Sandwich, A Real NYC Classic</p>
+          <p class="sub-text">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="image-and-text-content">
+          <img
+            class="just-image"
+            src="./multimedia/images/cherries.jpg"
+            alt=""
+          />
+          <p class="bold-text">The Perfect Sandwich, A Real NYC Classic</p>
+          <p class="sub-text">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="image-and-text-content">
+          <img class="just-image" src="./multimedia/images/wine.jpg" alt="" />
+          <p class="bold-text">The Perfect Sandwich, A Real NYC Classic</p>
+          <p class="sub-text">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="image-and-text-container-main2">
+      <div class="image-and-text-content-container">
+        <div class="image-and-text-content">
+          <img
+            class="just-image"
+            src="./multimedia/images/popsicle.jpg"
+            alt=""
+          />
+          <p class="bold-text">The Perfect Sandwich, A Real NYC Classic</p>
+          <p class="sub-text">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="image-and-text-content">
+          <img class="just-image" src="./multimedia/images/salmon.jpg" alt="" />
+          <p class="bold-text">The Perfect Sandwich, A Real NYC Classic</p>
+          <p class="sub-text">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="image-and-text-content">
+          <img
+            class="just-image"
+            src="./multimedia/images/sandwich (1).jpg"
+            alt=""
+          />
+          <p class="bold-text">The Perfect Sandwich, A Real NYC Classic</p>
+          <p class="sub-text">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+        <div class="image-and-text-content">
+          <img
+            class="just-image"
+            src="./multimedia/images/croissant.jpg"
+            alt=""
+          />
+          <p class="bold-text">The Perfect Sandwich, A Real NYC Classic</p>
+          <p class="sub-text">
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="pagenation-main">
+      <div class="pagenation-container">
+        <a href="./my_food.html" class="pagenation-numbrics">
+          <i id="icon" class="fa-solid fa-angles-left"></i>
+        </a>
+        <a href="./my_food.html" class="pagenation-numbrics">1</a>
+        <a href="./my_food.html" class="pagenation-numbrics">2</a>
+        <a href="./my_food.html" class="pagenation-numbrics">3</a>
+        <a href="./my_food.html" class="pagenation-numbrics">4</a>
+        <a href="./my_food.html" class="pagenation-numbrics">
+          <i id="icon" class="fa-solid fa-angles-right"></i>
+        </a>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <div>
+        <p
+          style="
+            font-family: Karma, sans-serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+          "
+        >
+          About Me, The Food Man
+        </p>
+        <img src="./multimedia/images/chef.jpg" alt="" />
+        <p style="font-size: 18px; font-weight: 700">I am Who I Am!</p>
+        <p style="font-size: 15px; font-style: italic">
+          With Passion For Real, Good Food
+        </p>
+        <p style="font-size: 15px; line-height: normal">
+          Just me, myself and I, exploring the universe of unknownment. I have a
+          heart of love and an interest of lorem ipsum and mauris neque quam
+          blog. I want to share my world with you. Praesent tincidunt sed tellus
+          ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue gravida diam non fringilla. Praesent tincidunt sed tellus ut
+          rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue gravida diam non fringilla.
+        </p>
+        <div
+          style="
+            margin: 100px 10px 50px;
+            background-color: #7a7777;
+            height: 1px;
+          "
+        ></div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          width: 85%;
+          height: 80%;
+        "
+      >
+        <div style="width: 33.33%; padding: 5px 10px">
+          <footer
+            style="
+              font-family: Karma, sans-serif;
+              font-size: 22.5px;
+              margin-bottom: 2px;
+              text-align: start;
+            "
+          >
+            Footer
+          </footer>
+          <p style="font-size: 15px; line-height: 22.5px; text-align: start">
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam non
+            fringilla.
+          </p>
+          <p
+            style="
+              font-size: 15px;
+              line-height: 22.5px;
+              text-align: start;
+              margin-top: 10px;
+            "
+          >
+            Powered by w3.css
+          </p>
+        </div>
+        <div
+          style="
+            width: 33.33%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+          "
+        >
+          <p style="width: 90%; text-align: start">BLOG POSTS</p>
+          <div style="display: flex; align-items: center; width: 90%">
+            <div style="display: flex; align-items: center">
+              <img
+                src="./multimedia/images/gondol.jpg"
+                style="height: 60px; width: 60px; margin: 0 10px"
+                alt=""
+              />
+              <div>
+                <p style="font-size: 18px; text-align: start">Lorem</p>
+                <p style="font-size: 18px; text-align: start">
+                  Sed mattis nunc
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; width: 90%">
+            <div style="display: flex; align-items: center">
+              <img
+                src="./multimedia/images/gondol.jpg"
+                style="height: 60px; width: 60px; margin: 0 10px"
+                alt=""
+              />
+              <div>
+                <p style="font-size: 18px; text-align: start">Lorem</p>
+                <p style="font-size: 18px; text-align: start">
+                  Sed mattis nunc
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- popular tags -->
+        <div
+          style="
+            width: 33.33%;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <div style="width: 80%; height: 0%">
+            <p style="width: 90%; text-align: start">POPULAR TAGS</p>
+          </div>
+          <!-- button boxes -->
+          <div
+            style="
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              flex-wrap: wrap;
+              height: 32%;
+              width: 95%;
+              gap: 1.5px;
+            "
+          >
+            <div class="lable-text-container">
+              <p class="lable-text">Travel</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">New York</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Dinner</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Salmon</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">France</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Drinks</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Ideas</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Flavors</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Cuisine</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Chicken</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Dressing</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Fried</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Fish</p>
+            </div>
+            <div class="lable-text-container">
+              <p class="lable-text">Duck</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+    </div>
+    <!-- i -->
+  </body>
+</html>
