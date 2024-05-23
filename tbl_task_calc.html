@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator and grid</title>
+    <style>
+      .table1 {
+        border-collapse: collapse;
+      }
+      .table2 {
+        border: 1px solid #767474;
+        border-spacing: 10px;
+        border-radius: 5px;
+      }
+      .inner-table-data {
+        border-radius: 5px;
+        padding: 15px;
+        background-color: #e0dfdf;
+      }
+      .table-heading {
+        border: 1px solid black;
+      }
+      .table-data {
+        border: 1px solid black;
+        width: 58vw;
+        height: 50vh;
+        border-spacing: 10px;
+      }
+      .output-box {
+        border: 0.5px solid #b0aaaa;
+        text-align: right;
+        border-radius: 5px;
+        padding: 5px 5px 5px 0px;
+        font-size: x-large;
+      }
+      #whitebutton {
+        background-color: cornsilk;
+      }
+      .table3 {
+        border: 1px solid black;
+      }
+      .table3row {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table1">
+      <tr>
+        <th class="table-heading">Calculator</th>
+        <th class="table-heading">Grid</th>
+      </tr>
+      <tr>
+        <td class="table-data">
+          <center>
+            <table class="table2">
+              <tr>
+                <td class="output-box" colspan="7">0</td>
+              </tr>
+              <tr class="table-row">
+                <td class="inner-table-data">Rad</td>
+                <td class="inner-table-data">Deg</td>
+                <td class="inner-table-data">X!</td>
+                <td class="inner-table-data">(</td>
+                <td class="inner-table-data">)</td>
+                <td class="inner-table-data">%</td>
+                <td class="inner-table-data">AC</td>
+              </tr>
+              <tr>
+                <td class="inner-table-data">Inv</td>
+                <td class="inner-table-data">Sin</td>
+                <td class="inner-table-data">ln</td>
+                <td class="inner-table-data" id="whitebutton">7</td>
+                <td class="inner-table-data" id="whitebutton">8</td>
+                <td class="inner-table-data" id="whitebutton">9</td>
+                <td class="inner-table-data">&#xF7;</td>
+              </tr>
+              <tr>
+                <td class="inner-table-data">&Pi;</td>
+                <td class="inner-table-data">cos</td>
+                <td class="inner-table-data">log</td>
+                <td class="inner-table-data" id="whitebutton">4</td>
+                <td class="inner-table-data" id="whitebutton">5</td>
+                <td class="inner-table-data" id="whitebutton">6</td>
+                <td class="inner-table-data">X</td>
+              </tr>
+              <tr>
+                <td class="inner-table-data">e</td>
+                <td class="inner-table-data">tan</td>
+                <td class="inner-table-data">&#x221A;</td>
+                <td class="inner-table-data" id="whitebutton">1</td>
+                <td class="inner-table-data" id="whitebutton">2</td>
+                <td class="inner-table-data" id="whitebutton">3</td>
+                <td class="inner-table-data">-</td>
+              </tr>
+              <tr>
+                <td class="inner-table-data">Ans</td>
+                <td class="inner-table-data" colspan="2">EXP</td>
+                <td class="inner-table-data" id="whitebutton">0</td>
+                <td class="inner-table-data" id="whitebutton">.</td>
+                <td class="inner-table-data" id="whitebutton">=</td>
+                <td class="inner-table-data">&#x2B;</td>
+              </tr>
+            </table>
+          </center>
+        </td>
+        <td class="table-data">
+          <center>
+            <table class="table3">
+              <tr>
+                <td rowspan="2" class="table3row">
+                  <center>
+                    <img
+                      height="600"
+                      src="./Multimedia/Images/anime character design references.jpeg"
+                      alt=""
+                    />
+                  </center>
+                </td>
+                <td class="table3row">
+                  <img
+                    height="200"
+                    width="350"
+                    src="./Multimedia/Images/Naruto vs Pain.jpeg"
+                    alt=""
+                  />
+                </td>
+                <td class="table3row">
+                  <center>
+                    <img
+                      width="400"
+                      src="./Multimedia/Images/wallpaper.png"
+                      alt=""
+                    />
+                  </center>
+                </td>
+                <td class="table3row">
+                  <center>
+                    <img
+                      height="200"
+                      width="300"
+                      src="./Multimedia/Images/this was my fav.jpeg"
+                      alt=""
+                    />
+                  </center>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="table3row">
+                  <center>
+                    <img
+                      height="400"
+                      src="./Multimedia/Images/download (1).jpeg"
+                      alt=""
+                    />
+                  </center>
+                </td>
+                <td rowspan="2" class="table3row">
+                  <img
+                    height="600"
+                    src="./Multimedia/Images/Sukuna x Sung Jin-Woo.jpeg"
+                    alt=""
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="table3row">
+                  <img
+                    width="300"
+                    src="./Multimedia/Images/download.jpeg"
+                    alt=""
+                  />
+                </td>
+                <td class="table3row">
+                  <center>
+                    <img
+                      width="400"
+                      src="./Multimedia/Images/wallpaper.png"
+                      alt=""
+                    />
+                  </center>
+                </td>
+                <td class="table3row">
+                  <center>
+                    <img
+                      width="390"
+                      src="./Multimedia/Images/bbd9dd3e-385e-4b5c-9811-7d81c7d2c332.jpeg"
+                      alt=""
+                    />
+                  </center>
+                </td>
+              </tr>
+            </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

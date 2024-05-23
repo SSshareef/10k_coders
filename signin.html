@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      input {
+        margin-top: 2%;
+        padding: 4% 5% 4% 5%;
+        border-radius: 50px;
+        border: 1px solid gray;
+        width: 100%;
+      }
+      label {
+        color: #4d4a4a;
+      }
+      .buttons {
+        width: 30%;
+        background-color: #3a86e2;
+        border: none;
+        font-weight: 400;
+        color: #161515;
+        transition: background-color 0.3s;
+      }
+      .buttons:hover {
+        background-image: linear-gradient(to bottom right, #3a86e2, #b3cdee);
+      }
+      .buttons:active {
+        background-image: linear-gradient(
+          to bottom right,
+          #111214,
+          #3a86e2,
+          #b3cdee,
+          #33373c
+        );
+        box-shadow: 1px 1px 5px #4d4a4a;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eef4f5;
+        height: 100vh;
+        width: 100vw;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-evenly;
+          padding: 5%;
+          border-radius: 10%;
+          height: auto;
+          width: 50%;
+        "
+      >
+        <form
+          action="./loginform.html"
+          style="
+            background-color: #e6f0f0;
+            width: 80%;
+            padding: 5%;
+            border-radius: 20px;
+            box-shadow: 7px 5px 20px #4d4a4a;
+          "
+        >
+          <center>
+            <u><h2 style="margin-bottom: 5%; color: #4d4a4a">Sign up</h2></u>
+          </center>
+          <div style="margin-left: 9%; padding: 2%; width: 80%">
+            <label for="uname">User Name</label>
+            <input type="text" name="uname" id="uname" required />
+          </div>
+          <div style="margin-left: 9%; padding: 2%; width: 80%">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div style="display: flex; justify-content: space-evenly">
+            <input
+              type="submit"
+              name="forgotpassword"
+              id="forgotpassword"
+              value="Signup"
+              class="buttons"
+            />
+            <input
+              class="buttons"
+              type="submit"
+              name="alreadyhaveanaccount"
+              id="alreadyhaveanaccount"
+              value="Existing User"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
