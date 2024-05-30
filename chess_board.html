@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chess board</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(8, 20vh);
+        justify-content: center;
+        align-content: center;
+        background-color: red;
+        height: 100vh;
+        /* width: 100%; */
+      }
+      section {
+        width: 100%;
+        height: 100%;
+      }
+
+      div {
+        background-color: yellow;
+        width: 100%;
+        height: 12vh;
+      }
+      section:nth-child(2n) div:nth-child(2n) {
+        background-color: black;
+      }
+      section:nth-child(2n + 1) div:nth-child(2n + 1) {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </main>
+  </body>
+</html>
