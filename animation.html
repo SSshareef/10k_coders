@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        font-size: 3em;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+      }
+
+      .first {
+        height: 100%;
+        width: 60%;
+      }
+      .second {
+        height: 100%;
+        width: 100%;
+        background-color: #000028c4;  
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="first"></section>
+      <section class="second"></section>
+    </div>
+  </body>
+</html>
