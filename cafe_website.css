@@ -19,7 +19,7 @@
 
   /* Text color variable */
   --text-primary: #ffa323;
-  --text-secondary: #f41f31;
+  --text-secondary: rgb(244, 31, 49);
   --text-white: #fff;
   --text-black: #0a0a0a;
   --text-color: #545454;

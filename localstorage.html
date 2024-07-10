@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <h1>Data Storage Demo</h1>
+    <form id="data-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+      <label for="message">Message:</label>
+      <input id="message" name="message" required></input>
+      <br />
+      <button type="submit">Store Data</button>
+    </form>
+    <div id="storage-options">
+      <button id="local-display">Display Local Storage</button>
+      <button id="session-display">Display Session Storage</button>
+    </div>
+    <ul id="data-display"></ul>
+
+    <script>
+      const form = document.getElementById("data-form");
+      const nameInput = document.getElementById("name");
+      const messageInput = document.getElementById("message");
+      const localDisplayBtn = document.getElementById("local-display");
+      const sessionDisplayBtn = document.getElementById("session-display");
+      const dataDisplay = document.getElementById("data-display");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = nameInput.value;
+        const message = messageInput.value;
+
+        localStorage.setItem("name", name);
+        sessionStorage.setItem("name", name); // Consistent name for session storage
+
+        localStorage.setItem("message", message);
+        sessionStorage.setItem("message", message); // Consistent name for session storage
+
+        dataDisplay.textContent = "Data stored successfully!";
+
+        // Clear form fields (optional)
+        nameInput.value = "";
+        messageInput.value = "";
+      });
+
+      localDisplayBtn.addEventListener("click", () => {
+        const localName = localStorage.getItem("name");
+        const localMessage = localStorage.getItem("message");
+        if (localName && localMessage) {
+          dataDisplay.textContent = `Local Storage:\nName: ${localName}\nMessage: ${localMessage}`;
+        } else {
+          dataDisplay.textContent = "No data found in Local Storage.";
+        }
+      });
+
+      sessionDisplayBtn.addEventListener("click", () => {
+        const sessionName = sessionStorage.getItem("name");
+        const sessionMessage = sessionStorage.getItem("message");
+
+        if (sessionName && sessionMessage) {
+          dataDisplay.textContent = `Session Storage:\nName: ${sessionName}\nMessage: ${sessionMessage}`;
+        } else {
+          dataDisplay.textContent = "No data found in Session Storage.";
+        }
+      });
+
+      console.log('hai')
+    </script>
+  </body>
+</html>

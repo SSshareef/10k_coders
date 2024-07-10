@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form JS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+        background-color: #ffebcd;
+      }
+
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        width: 30%;
+        background-color: #0000ff;
+        border-radius: 1rem;
+      }
+
+      .form-container input {
+        width: 80%;
+        height: 10%;
+        margin: 0.625rem;
+        border-radius: 1rem;
+        outline: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="form" class="form-container">
+        <input type="text" />
+        <input type="password" id="passwordDisplay" />
+        <input type="submit" id="submitButton"/>
+      </form>
+    </div>
+
+    <script defer>
+      let passwordDisplay = document.getElementById("passwordDisplay");
+      let submitButton = document.getElementById("submitButton")
+
+      addEventListener('click', ()=>{
+      
+      })
+    </script>
+  </body>
+</html>
